@@ -19,123 +19,279 @@
   <h1>Tarot — Privacy Policy / 개인정보처리방침</h1>
   <p class="meta"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
   <p class="meta">Public URL: <a href="https://chuckchucklab.github.io/tarot-privacy/">https://chuckchucklab.github.io/tarot-privacy/</a></p>
-  <p class="meta">Developer: Solodep. It covers version 0.3 of <code>io.github.chuckchucklab.tarot</code>.</p>
+  <p class="meta">Developer and personal information protection officer: Solodep. It covers version 0.4 of <code>io.github.chuckchucklab.tarot</code>.</p>
   <p class="meta">Effective date: November 14, 2026.</p>
 
   <section id="ko" lang="ko">
   <h2>한국어</h2>
   <p><strong>시행일: 2026-11-14</strong></p>
-  <p>개발자는 Solodep입니다. 패키지 이름은 <code>io.github.chuckchucklab.tarot</code>입니다. 이 방침은 버전 0.3에 적용됩니다. 이 방침은 https://chuckchucklab.github.io/tarot-privacy/ 에 게시합니다.</p>
-  <p>Tarot(이하 "이 앱")는 하루 한 장의 타로를 뽑고, 짧은 뜻과 한 줄, 홈 화면 위젯, 78장 사전, 최근 7일의 기록, 펼치기 다섯 가지, AI 대화 미리보기를 보여주는 Android 앱입니다. 카드 그림은 저작권이 만료된 고전 덱 두 가지입니다. 기본은 1909년 Pamela Colman Smith의 고전 그림이고, 설정에서 Jean Dodal의 마르세유 타로(리옹, 1701–1715년경)를 고를 수 있습니다. 0.3은 한국어와 영어를 지원합니다. 뽑기와 풀이는 인터넷 없이 동작하고, 구독 결제와 확인에만 Google Play 연결을 씁니다.</p>
+  <p>개발자는 Solodep입니다. 패키지 이름은 <code>io.github.chuckchucklab.tarot</code>입니다. 이 방침은 버전 0.4에 적용됩니다. 이 방침은 https://chuckchucklab.github.io/tarot-privacy/ 에 게시합니다.</p>
+  <p>Tarot(이하 "이 앱")는 하루 한 장의 타로를 뽑고, 짧은 뜻과 한 줄, 홈 화면 위젯, 78장 사전, 최근 7일의 기록, 펼치기 다섯 가지, AI 대화를 보여주는 Android 앱입니다. 카드 그림은 저작권이 만료된 고전 덱 두 가지입니다. 기본은 1909년 Pamela Colman Smith의 고전 그림이고, 설정에서 Jean Dodal의 마르세유 타로(리옹, 1701–1715년경)를 고를 수 있습니다. 0.4는 한국어와 영어를 지원합니다. 뽑기와 풀이는 인터넷 없이 동작합니다. 구독 결제와 확인, 그리고 사용자가 켠 AI 대화에 Google Play 연결과 개발자 서버 연결을 씁니다.</p>
   <p>타로는 재미와 돌아보기용입니다. 의료·법률·금융 조언이 아니고, 앞날을 단정하지 않습니다. 이 안내를 처음 실행할 때와 설정에서 보여 줍니다.</p>
 
   <h3>1. 요약</h3>
   <ul>
-    <li><strong>이 앱은 개인정보를 수집하지 않고, 다른 곳에 공유하지 않습니다.</strong></li>
-    <li>뽑기 기록, 펼치기 기록, 설정, AI 대화 미리보기의 동의·연령 확인·질문 횟수·신고, Google Play가 이 기기에 알려 주는 구독 상태는 기기에 남습니다. 대화 내용은 화면을 닫으면 지워집니다.</li>
-    <li>결제는 Google Play가 처리합니다. 이 앱은 기능을 열기 위해 그 구독 상태만 받습니다. 개발자는 카드 번호나 결제 정보를 받지 않고, 개발자 서버가 없습니다.</li>
-    <li>0.3이 요청하는 권한은 위젯 날짜용 '시작 시 실행'(RECEIVE_BOOT_COMPLETED)과, Google Play 결제 라이브러리에 딸린 Play 결제(<code>com.android.vending.BILLING</code>), <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>입니다. 뒤의 세 권한은 구매와 구독 상태를 Google Play와 확인하는 데 씁니다. 뽑기, 질문, 신고, 그 밖의 개인정보는 개발자에게 보내지 않습니다.</li>
-    <li>광고, 분석 도구, 비정상 종료 보고 SDK가 없습니다.</li>
+    <li>뽑기 기록, 펼치기 기록, 설정, AI 대화의 동의·연령 확인·질문 횟수, Google Play가 이 기기에 알려 주는 구독 상태는 기기에 남습니다. 화면의 대화 내용은 화면을 닫으면 지워집니다.</li>
+    <li>AI 대화는 선택입니다. 기본은 꺼져 있고, 처음 쓸 때 동의를 받습니다. 동의하지 않아도 뽑기와 풀이는 그대로 씁니다. 만 19세 이상이라고 확인한 뒤에만 열립니다.</li>
+    <li>AI 대화를 보내면 질문, 뽑은 카드와 그 짧은 글, 최근 대화 최대 6줄, 표시 언어, 지역 코드, Google Play 구매 토큰, Android ID에서 만든 SHA-256 키가 개발자의 서버로 나갑니다. Android ID 원문은 나가지 않습니다. 그 서버는 Cloudflare에서 동작하고, 답을 쓸 때 OpenAI를 처리자로 부릅니다.</li>
+    <li>결제는 Google Play가 처리합니다. 이 앱은 카드 번호를 받지 않습니다. AI 대화를 켠 경우에만 구매 토큰을 개발자 서버로 보내고, 서버는 그 토큰의 해시만 저장한 뒤 Google Play에 구독이 유효한지 묻습니다.</li>
+    <li>광고가 없습니다. 이 정보로 광고 프로필을 만들지 않고, 팔지 않습니다. 분석 도구와 비정상 종료 보고 SDK가 없습니다.</li>
     <li>계정이 없고, 로그인을 요구하지 않습니다.</li>
   </ul>
 
   <h3>2. 기기에 남는 것</h3>
-  <p>다음 값만 기기 안의 앱 전용 저장소에 남습니다.</p>
+  <p>다음 값은 기기 안의 앱 전용 저장소에 남습니다.</p>
   <table>
     <tr><th>항목</th><th>내용</th></tr>
     <tr><td>뽑기 기록</td><td>날짜, 카드, 정방향 또는 역방향. 앱이 보여주는 범위는 최근 7일입니다.</td></tr>
     <tr><td>펼치기 기록</td><td>날짜, 펼치기 종류, 적은 질문 한 줄(선택), 둘 중 고르기에서 적은 선택지 이름 A·B(선택), 카드 세 장과 방향</td></tr>
-    <tr><td>AI 대화 미리보기</td><td>안내에 동의했는지, 만 19세 이상이라고 확인했는지, 질문 횟수와 그 횟수가 속한 기간, 신고한 답</td></tr>
+    <tr><td>AI 대화</td><td>안내에 동의했는지, 만 19세 이상이라고 확인했는지, 질문 횟수와 그 횟수가 속한 기간, 이 기기에 남긴 신고</td></tr>
     <tr><td>설정</td><td>표시 언어(기기 설정 따름, 한국어, English), 역방향 사용 여부, 고른 카드 덱, 뽑는 방식(직접 고르기 또는 자동), 첫 실행 안내를 봤는지 여부</td></tr>
     <tr><td>구독 상태</td><td>Google Play가 이 기기에 알려 주는 구독 여부. 기능을 여는 데만 씁니다. 카드 번호와 결제 정보는 없습니다.</td></tr>
   </table>
-  <p>뽑기 기록은 사용자가 지우거나 앱을 삭제할 때까지 기기에 남습니다. 앱은 그중 최근 7일만 보여 줍니다. 펼치기 기록, 적은 질문, 선택지 이름, 신고한 답, 질문 횟수도 지우거나 앱을 삭제할 때까지 기기에 남습니다.</p>
-  <p>이름, 이메일, 생년월일을 묻지 않습니다. 나이는 만 19세 이상인지만 확인합니다. 질문은 적지 않아도 되고, 적은 질문은 기기에만 남습니다.</p>
-  <p>결제는 Google Play가 처리합니다. 이 앱은 기기에서 구독 상태만 받아 기능을 엽니다. 개발자는 카드 번호나 그 밖의 결제 정보를 받지 않습니다. 개발자 서버가 없습니다. 구독의 해지와 관리는 Google Play에서 합니다. AI 대화는 미리보기입니다. 답은 AI 모델이 아니라 기기 안에서 카드 글로 만들고, 질문과 답을 어디에도 보내지 않습니다. 대화는 화면을 닫으면 지워집니다. 신고한 답은 기기에만 남고 개발자에게 전송되지 않습니다.</p>
+  <p>뽑기 기록은 사용자가 지우거나 앱을 삭제할 때까지 기기에 남습니다. 앱은 그중 최근 7일만 보여 줍니다. 펼치기 기록, 적은 질문, 선택지 이름, 기기에 남긴 신고, 질문 횟수도 지우거나 앱을 삭제할 때까지 기기에 남습니다.</p>
+  <p>이름, 이메일, 생년월일을 묻지 않습니다. 나이는 만 19세 이상인지만 확인합니다. 펼치기의 질문은 적지 않아도 되고, 그 한 줄은 기기에 남습니다. AI 대화의 질문은 그와 다릅니다. 보내면 아래 5절대로 기기 밖으로 나갑니다. 화면의 대화 내용은 화면을 닫으면 지워집니다.</p>
+  <p>결제는 Google Play가 처리합니다. 이 앱은 기기에서 구독 상태만 받아 기능을 엽니다. 개발자는 카드 번호나 그 밖의 결제 정보를 받지 않습니다. 구독의 해지와 관리는 Google Play에서 합니다.</p>
   <p>홈 화면에 위젯을 올리면 오늘의 카드와 한 줄이 런처에 보입니다. 홈 화면을 볼 수 있는 사람은 그 내용을 볼 수 있습니다. 이 표시는 개발자에게 보내는 전송이 아닙니다.</p>
 
   <h3>3. 인터넷과 권한</h3>
-  <p>0.3은 뽑기, 질문, 신고, 그 밖의 개인정보를 개발자에게 보내지 않습니다. 개발자 서버가 없습니다. <code>INTERNET</code>과 <code>ACCESS_NETWORK_STATE</code>는 Google Play 결제 라이브러리 9.1.0이 함께 넣는 권한이며, 구매와 구독 상태를 Google Play와 확인하는 데 씁니다. 이 앱이 Google Play에서 받는 것은 기기의 구독 상태뿐이고, 그 상태로 기능을 엽니다. 광고·분석·비정상 종료 보고 SDK가 없습니다. 카드 뽑기, 펼치기 다섯 가지, 짧은 뜻, 사전, 기록, 위젯, AI 대화 미리보기는 기기 안에서 처리합니다.</p>
-  <p>0.3이 요청하는 권한은 다음입니다. '시작 시 실행'(RECEIVE_BOOT_COMPLETED)은 기기를 다시 켠 뒤 위젯의 날짜를 맞추는 데만 씁니다. Play 결제(<code>com.android.vending.BILLING</code>), <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>는 Google Play 결제 라이브러리와 함께 오며, 구매와 구독 상태를 Google Play와 확인하는 데 씁니다.</p>
-  <p>0.3이 요청하지 않는 권한은 다음입니다. 광고 ID, 위치, 연락처, 카메라, 마이크, 사진·동영상, 포그라운드 서비스, 전체 화면 인텐트.</p>
+  <p>0.4가 요청하는 권한은 다음입니다. <code>INTERNET</code>은 앱이 선언하며, AI 대화와 구독 확인에 씁니다. '시작 시 실행'(RECEIVE_BOOT_COMPLETED)은 기기를 다시 켠 뒤 위젯의 날짜를 맞추는 데만 씁니다. Play 결제(<code>com.android.vending.BILLING</code>)와 <code>ACCESS_NETWORK_STATE</code>는 Google Play 결제 라이브러리와 함께 오며, 구매와 구독 상태를 Google Play와 확인하는 데 씁니다.</p>
+  <p>0.4가 요청하지 않는 권한은 다음입니다. 광고 ID, 위치, 연락처, 카메라, 마이크, 사진·동영상, 포그라운드 서비스, 전체 화면 인텐트.</p>
+  <p>광고, 분석, 비정상 종료 보고 SDK가 없습니다. 카드 뽑기, 펼치기 다섯 가지, 짧은 뜻, 사전, 기록, 위젯은 기기 안에서 처리합니다.</p>
 
   <h3>4. Android 자동 백업</h3>
   <p>이 앱은 데이터를 직접 업로드하지 않습니다. 사용자의 기기에서 Android 자동 백업이 켜져 있으면, Google이 그 기기 설정에 따라 앱 데이터를 백업할 수 있습니다. 백업은 Android 시스템이 처리하며, 이 앱의 인터넷 권한으로 보내지 않습니다. 백업의 보관과 삭제는 사용자의 백업 설정과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다. 백업에는 적은 질문 한 줄과, 둘 중 고르기에서 적은 선택지 이름도 들어갈 수 있습니다.</p>
 
-  <h3>5. 삭제</h3>
+  <h3>5. AI 대화 (선택)</h3>
+  <p>AI 대화는 직접 켤 때만 작동합니다. 기본은 꺼져 있고 처음 쓸 때 동의를 받습니다. 동의하지 않거나 꺼도 다른 기능은 그대로 씁니다. 만 19세 이상이라고 확인한 뒤에만 열립니다. 화면의 대화는 이 기기의 메모리에만 있고, 화면을 닫으면 지워집니다. 요청 하나에는 이번 질문 이전의 최근 6줄까지이고, 서버는 그 줄을 저장하지 않으며 다음 요청에 붙이지도 않습니다.</p>
+  <p>앱이 자해나 자살 낌새를 먼저 알아보면, 그 질문은 서버로 나가지 않고 상담 연락처를 보여 줍니다. 서버가 알아보면 모델을 부르지 않고 같은 종류의 연락처를 돌려줍니다. 그 질문은 신고하지 않는 한 저장하지 않습니다.</p>
+  <table>
+    <tr><th>보내는 것</th><td>질문, 뽑은 카드와 그 짧은 글, 최근 대화 최대 6줄, 표시 언어(<code>ko</code> 또는 <code>en</code>), 지역 코드(있을 때만, 두 글자), Google Play 구매 토큰, Android ID에 접두어를 붙여 만든 SHA-256 키</td></tr>
+    <tr><th>보내지 않는 것</th><td>이름, 이메일, 생년월일, Android ID 원문, 카드 번호. 질문에 직접 쓴 내용은 앱이 지우지 않습니다. 이름, 연락처, 건강 같은 내용은 쓰지 마세요</td></tr>
+    <tr><th>보내는 때와 방법</th><td>질문을 보낼 때, 구독 상태를 서버에 물을 때, 신고를 보낼 때. 암호화된 연결(HTTPS)</td></tr>
+  </table>
+  <p>상태 확인은 AI 대화를 켠 경우에만 합니다. 상태만 물을 때는 구매 토큰과 기기 키 해시만 보내고, 질문과 카드 글은 보내지 않습니다. 지역 코드는 위기 연락처의 순서를 정하는 데만 쓰고, OpenAI에는 보내지 않습니다.</p>
+  <p><strong>개인정보 국외 이전.</strong> AI 대화를 위해 아래 회사가 정보를 처리합니다. 동의하지 않으면 보내지 않고, AI 대화만 쓸 수 없습니다. 근거: 개인정보 보호법 제28조의8 제1항 제3호(계약 이행에 필요한 처리위탁·보관). 질문·신고·상태 확인 때마다 HTTPS로 보냅니다.</p>
+  <table>
+    <tr><th>받는 곳</th><th>나라</th><th>항목</th><th>목적</th><th>보관</th></tr>
+    <tr><td>Cloudflare, Inc. (개발자 서버를 운영). privacyquestions@cloudflare.com</td><td>미국. 요청은 가까운 Cloudflare 데이터센터에서 처리합니다</td><td>위 보내는 것 전부</td><td>구매 확인, 횟수 계산, 질문 전달, 신고 보관</td><td>일반 대화의 질문과 답 원문은 저장하지 않습니다. 신고한 질문과 답 원문은 90일 둡니다. 그 밖의 서버 기록은 아래와 같습니다</td></tr>
+    <tr><td>OpenAI OpCo, LLC. dsar@openai.com</td><td>미국</td><td>질문, 최근 6줄, 뽑은 카드와 그 짧은 글, 펼치기, 표시 언어</td><td>답 작성. 모델은 <code>gpt-6-luna</code>이고 <code>store: false</code>로 부릅니다</td><td>2026-11-08에 연 공식 안내: API 데이터는 2023-03-01 이후 학습 동의가 없으면 학습에 쓰지 않음. 오남용 감시 기록은 기본 최대 30일이고, 법 또는 서비스·제3자 피해 방지가 필요하면 더 길 수 있음. 이 앱의 Zero Data Retention 승인은 확인하지 않음. <code>store: false</code>는 그 승인이 아닙니다. <a href="https://developers.openai.com/api/docs/guides/your-data">https://developers.openai.com/api/docs/guides/your-data</a></td></tr>
+  </table>
+  <p>구매 토큰과 기기 키 해시는 OpenAI로 보내지 않습니다. 구매 토큰은 구독 확인을 위해 서버에서 Google Play Developer API로 전달됩니다. Google이 처리하는 결제 정보는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+  <p>서버가 남기는 기록은 다음입니다.</p>
   <ul>
-    <li>앱 안의 "기록 전체 삭제"는 기기에 있는 뽑기 기록, 펼치기 기록, 적은 질문, 선택지 이름, 신고한 답, 질문 횟수를 지웁니다. 대화 내용은 화면을 닫으면 이미 지워집니다.</li>
-    <li>앱을 삭제하면 그 기기의 앱 데이터도 함께 지워집니다.</li>
+    <li>일반 대화의 질문, 답, 최근 줄, 카드 글, 펼치기 글은 저장하지 않습니다. 로그에도 대화 원문을 남기지 않고, 오류 코드만 남깁니다.</li>
+    <li>신고한 질문과 답은 원문 그대로 저장하고 90일 뒤 지웁니다. 요청하면 그 전에 지웁니다. 이유와 표시 언어도 함께 둡니다. 그 원문에는 사용자가 직접 쓴 내용이 들어 있을 수 있습니다. 신고는 구매 토큰의 SHA-256, 또는 기기 키 해시에 연결됩니다.</li>
+    <li>기기 키는 Android ID 원문이 아닙니다. 접두어 <code>tarot-free-v1:</code>와 Android ID를 이은 값의 SHA-256이고, 64자의 소문자 hex입니다. 무료 횟수를 세는 행은 마지막 사용 뒤 1년이 지나면 지웁니다. 요청하면 그 전에 지웁니다. 지우면 무료 3번이 다시 열릴 수 있습니다.</li>
+    <li>구독의 사용 창(시작 시각과 횟수)은 마지막 사용 뒤 1년이 지나면 지웁니다. 요청하면 그 전에 지웁니다. 지우면 24시간 창의 시작이 되돌아갈 수 있습니다. 시계를 뒤로 돌려도 새 창을 열지 않습니다.</li>
+    <li>구매 토큰의 SHA-256과, 같은 요청에 있으면 <code>linkedPurchaseToken</code>의 SHA-256을 저장합니다. 토큰 원문은 저장하지 않습니다. 구독이 이어지는 동안 이 해시는 요금제를 바꾸거나 갱신해도 같은 창을 유지하는 데 씁니다. 구독이 끝난 뒤 1년이 지나면 지웁니다. 요청하면 그 전에 지웁니다.</li>
+    <li>구매 확인 캐시는 맞으면 1시간, 아니면 5분 동안 다시 씁니다. 행을 지우는 시각은 그 재사용과 다릅니다. 확인 시각이 1시간을 넘은 캐시 행을 지웁니다.</li>
+    <li>서울 날짜의 하루 총량 횟수는 질문 원문 없이 숫자만 두고, 그 날짜가 지나면 지웁니다. 끝난 창과 맞지 않는 환불 표도 정리 때 지웁니다.</li>
+  </ul>
+  <p>정리 시각은 한국 시각 00:10입니다. 기간이 지난 행은 그때 지웁니다. 무료는 기기 키마다 평생 3번이고, 구독이 유효하면 첫 대화부터 24시간마다 20번입니다.</p>
+  <p>답은 AI가 씁니다. 틀릴 수 있으니 참고로만 보세요. 답마다 있는 신고 버튼으로 앱을 나가지 않고 알릴 수 있습니다. 신고, 기기 키 해시, 구매 토큰 해시를 지우고 싶으면 7절대로 요청합니다.</p>
+
+  <h3>6. 하지 않는 것</h3>
+  <ul>
+    <li>광고를 넣지 않습니다. 보낸 정보로 광고 프로필을 만들지 않고, 그 정보를 팔지 않습니다.</li>
+    <li>계정을 만들지 않으며 로그인을 요구하지 않습니다.</li>
+    <li>분석 도구나 비정상 종료 보고 SDK를 넣지 않았습니다.</li>
+    <li>광고 ID, 위치, 연락처, 카메라, 마이크, 사진에는 접근하지 않습니다.</li>
+    <li>결제 카드 정보를 직접 받거나 저장하지 않습니다.</li>
+    <li>Android ID 원문은 보내지 않고 저장하지 않습니다. 기기 키 해시는 광고에 쓰지 않습니다.</li>
+    <li>AI 대화를 켜지 않으면 질문, 카드 글, 구매 토큰, 기기 키 해시를 개발자 서버로 보내지 않습니다.</li>
+  </ul>
+
+  <h3>7. 삭제</h3>
+  <ul>
+    <li>앱 안의 "기록 전체 삭제"는 기기에 있는 뽑기 기록, 펼치기 기록, 적은 질문, 선택지 이름, 기기에 남긴 신고, 질문 횟수를 지웁니다. 화면의 대화 내용은 화면을 닫으면 이미 지워집니다. 이 삭제는 서버의 기록을 지우지 않습니다.</li>
+    <li>앱 0.4.1부터 설정의 "AI 대화 기록 지우기"는 이 기기의 서버 행을 지웁니다. 무료 횟수, 사용 창, 구매 토큰 해시, 기기 키 해시, 신고가 그 요청으로 지워집니다.</li>
+    <li>그 전에도, 그리고 그 뒤에도, 10절의 메일로 삭제를 요청할 수 있습니다. 요청하면 지웁니다. 다른 법령이 보관을 정한 경우가 아니면 그 삭제를 거절하지 않습니다. 메일에는 설정의 "기기 키 복사"로 복사한 기기 키를 적어 이 기기를 지정합니다.</li>
+    <li>앱을 삭제하면 그 기기의 앱 데이터도 함께 지워집니다. 서버에 있는 기기 키 해시, 구매 토큰 해시, 사용 창, 신고는 앱 삭제만으로 지워지지 않습니다. 위 요청으로 지웁니다.</li>
     <li>Google 백업에 복사본이 있다면, 그 복사본은 사용자의 Google 계정과 Android 백업 설정에서 관리합니다. 이 앱은 그 백업을 지우지 못합니다.</li>
   </ul>
 
-  <h3>6. 아동</h3>
-  <p>이 앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다. Google Play 가족 정책에서도 아동을 대상으로 하지 않습니다. AI 대화는 만 19세 이상이라고 확인한 뒤에만 열립니다.</p>
+  <h3>8. 아동</h3>
+  <p>이 앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다. Google Play 가족 정책에서도 아동을 대상으로 하지 않습니다. AI 대화는 만 19세 이상만 사용할 수 있습니다. 만 14세 미만의 개인정보는 받지 않습니다.</p>
 
-  <h3>7. 변경</h3>
-  <p>이 방침은 0.3을 다룹니다. 결제는 이 방침에 적혀 있습니다. Google Play가 결제를 처리하고, 이 앱은 기기의 구독 상태만 받습니다. AI 대화를 실제 서비스로 바꾸는 버전은 출시 전에 이 방침을 갱신합니다. 질문이 기기를 떠나게 되기 때문입니다. 기기 밖으로 새로 나가는 데이터가 있으면 그 내용을 적습니다.</p>
+  <h3>9. 변경</h3>
+  <p>이 방침은 0.4를 다룹니다. 이전 방침은 <a href="https://github.com/chuckchucklab/tarot-privacy/commits/main/index.html">chuckchucklab/tarot-privacy 저장소의 index.html 이력</a>에 있습니다. 결제는 이 방침에 적혀 있습니다. Google Play가 결제를 처리하고, 이 앱은 카드 번호를 받지 않습니다.</p>
   <p>방침이 바뀌면 시행일을 갱신하고, 중요한 변경은 앱 업데이트 설명에 함께 안내합니다.</p>
 
-  <h3>8. 문의</h3>
-  <p>개발자 Solodep<br><a href="mailto:chuckchuck.lab+tarot@gmail.com">chuckchuck.lab+tarot@gmail.com</a></p>
+  <h3>10. 문의</h3>
+  <p>개인정보 보호책임자: Solodep<br><a href="mailto:chuckchuck.lab+tarot@gmail.com">chuckchuck.lab+tarot@gmail.com</a></p>
+
+  <h3>11. 권리와 행사 방법</h3>
+  <p>사용자는 자신의 개인정보를 열람하고, 정정하고, 삭제하고, 처리를 멈추게 할 수 있습니다. AI 대화에 한 동의는 철회할 수 있습니다.</p>
+  <ul>
+    <li>열람, 정정, 삭제, 처리정지는 10절의 메일로 요청합니다. 이 기기를 지정하려면 설정의 "기기 키 복사"로 복사한 기기 키를 적습니다.</li>
+    <li>삭제는 7절과 같습니다. 앱 0.4.1부터는 설정의 "AI 대화 기록 지우기"로 이 기기의 서버 행을 지울 수 있습니다. 기기의 뽑기 기록은 "기록 전체 삭제"로 지웁니다.</li>
+    <li>AI 대화를 끄면 동의가 철회됩니다. 그 뒤에는 질문, 카드 글, 구매 토큰, 기기 키 해시를 개발자 서버로 보내지 않습니다.</li>
+    <li>다른 법령이 보관을 정한 경우가 아니면 요청한 삭제를 거절하지 않습니다. 요청을 받아들이지 못하면 그 이유를 알립니다.</li>
+  </ul>
+
+  <h3>12. 파기</h3>
+  <p>종이로 된 개인정보는 없습니다. 전자 기록은 복구할 수 없게 지웁니다.</p>
+  <ul>
+    <li>일반 대화의 질문과 답은 서버에 저장하지 않습니다. 저장하지 않은 원문은 파기할 기록이 없습니다.</li>
+    <li>신고 원문은 90일 뒤 지웁니다. 요청하면 그 전에 지웁니다.</li>
+    <li>무료 횟수와 사용 창은 마지막 사용 뒤 1년이 지나면 지웁니다. 요청하면 그 전에 지웁니다.</li>
+    <li>구매 토큰 해시는 구독이 끝난 뒤 1년이 지나면 지웁니다. 요청하면 그 전에 지웁니다.</li>
+    <li>기기에 남은 기록은 "기록 전체 삭제" 또는 앱 삭제로 지웁니다.</li>
+    <li>OpenAI가 남기는 오남용 감시 기록은 5절의 기간을 따릅니다. 이 앱이 그 기록을 지우지는 못합니다.</li>
+  </ul>
+
+  <h3>13. 안전 조치</h3>
+  <ul>
+    <li>서버로 보내는 내용은 HTTPS로 암호화합니다.</li>
+    <li>구매 토큰과 기기 식별자는 해시만 저장합니다. Android ID 원문과 카드 번호는 저장하지 않습니다.</li>
+    <li>일반 대화의 질문과 답은 저장하지 않습니다. 로그에는 대화 원문 없이 오류 코드만 남깁니다.</li>
+    <li>광고, 분석, 비정상 종료 보고 SDK가 없습니다.</li>
+    <li>서버는 개발자가 Cloudflare에서 운영합니다. AI 대화는 기본으로 꺼져 있고, 켠 뒤에만 위 항목을 보냅니다.</li>
+  </ul>
+
+  <h3>14. 권익침해 구제</h3>
+  <p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다. 10절의 개인정보 보호책임자에게 먼저 알릴 수도 있습니다.</p>
+  <ul>
+    <li>개인정보침해 신고센터: 118 (국번 없이), <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li>
+    <li>개인정보분쟁조정위원회: 1833-6972 (국번 없이), <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li>
+  </ul>
   </section>
 
   <section id="en" lang="en">
   <h2>English</h2>
   <p><strong>Effective date: November 14, 2026</strong></p>
-  <p>The developer is Solodep. The package name is <code>io.github.chuckchucklab.tarot</code>. This policy applies to version 0.3. This policy is published at https://chuckchucklab.github.io/tarot-privacy/.</p>
-  <p>Tarot ("the app") draws one tarot card a day and shows a short meaning, one line, a home-screen widget, a 78-card dictionary, the last 7 days of draws, five spreads, and a preview of AI chat. The card art is two public-domain decks. The default is the classic 1909 illustrations by Pamela Colman Smith. In Settings you can switch to Jean Dodal's Tarot de Marseille (Lyon, c.1701–1715). Version 0.3 is in Korean and English. Draws and readings work without the internet, and only subscription purchase and checks use a Google Play connection.</p>
+  <p>The developer is Solodep. The package name is <code>io.github.chuckchucklab.tarot</code>. This policy applies to version 0.4. This policy is published at https://chuckchucklab.github.io/tarot-privacy/.</p>
+  <p>Tarot ("the app") draws one tarot card a day and shows a short meaning, one line, a home-screen widget, a 78-card dictionary, the last 7 days of draws, five spreads, and AI chat. The card art is two public-domain decks. The default is the classic 1909 illustrations by Pamela Colman Smith. In Settings you can switch to Jean Dodal's Tarot de Marseille (Lyon, c.1701–1715). Version 0.4 is in Korean and English. Draws and readings work without the internet. Subscription purchase and checks, and AI chat when you turn it on, use a Google Play connection and the developer's server.</p>
   <p>Tarot here is for fun and reflection, not medical, legal, or financial advice, and it does not claim to know what will happen. The app shows that note on first launch and in Settings.</p>
 
   <h3>1. In short</h3>
   <ul>
-    <li><strong>The app collects no personal data and shares none.</strong></li>
-    <li>Draw history, spread history, settings, the AI chat preview's consent, age confirmation, question count, and reports, and the subscription status that Google Play reports on this device stay on the device. The conversation is erased when you close the screen.</li>
-    <li>Payments are handled by Google Play. The app receives only that subscription status, and it uses the status to unlock features. The developer does not receive card or payment details, and there is no developer server.</li>
-    <li>Version 0.3 requests RECEIVE_BOOT_COMPLETED, used only to correct the widget date, and <code>com.android.vending.BILLING</code>, <code>INTERNET</code>, and <code>ACCESS_NETWORK_STATE</code>, which come with the Google Play Billing library so purchases and subscription status can be checked with Google Play. The app does not send draws, questions, reports, or any personal data to the developer.</li>
-    <li>There are no ads, no analytics, and no crash-reporting SDK.</li>
+    <li>Draw history, spread history, settings, the AI chat consent, age confirmation, and question count, and the subscription status that Google Play reports on this device, stay on the device. The conversation on screen is erased when you close the screen.</li>
+    <li>AI chat is optional. It is off until you agree the first time you use it. Draws and readings still work if you do not agree. It opens only after you confirm that you are 19 or older.</li>
+    <li>When you send AI chat, the question, the drawn cards and their short texts, up to 6 recent lines, the locale, the region code, the Google Play purchase token, and a SHA-256 key derived from the Android ID go to the developer's server. The raw Android ID does not. That server runs on Cloudflare and calls OpenAI, as a processor, to write the answer.</li>
+    <li>Payments are handled by Google Play. The app does not receive a card number. Only when AI chat is on does it send the purchase token to the developer's server. The server stores only a hash of that token and asks Google Play whether the subscription is valid.</li>
+    <li>There are no ads. This information is not used to build an advertising profile and it is not sold. There is no analytics SDK and no crash-reporting SDK.</li>
     <li>There is no account, and the app does not ask you to sign in.</li>
   </ul>
 
   <h3>2. What stays on the device</h3>
-  <p>Only these values stay in the app's private storage on the device.</p>
+  <p>These values stay in the app's private storage on the device.</p>
   <table>
     <tr><th>Item</th><th>Contents</th></tr>
     <tr><td>Draw history</td><td>The date, the card, and upright or reversed. The app shows the last 7 days.</td></tr>
     <tr><td>Spread history</td><td>The date, the spread, the one-line question if you wrote one, the option names A and B if you named them for Choose between two, and the three cards with upright or reversed</td></tr>
-    <tr><td>AI chat preview</td><td>Whether you agreed to the notice, whether you confirmed you are 19 or older, the question count and the window it belongs to, and the answers you reported</td></tr>
+    <tr><td>AI chat</td><td>Whether you agreed to the notice, whether you confirmed you are 19 or older, the question count and the window it belongs to, and reports kept on the device</td></tr>
     <tr><td>Settings</td><td>Display language (follow the device, Korean, or English), whether reversed cards are on, the chosen deck, how you draw (pick it yourself or let the app draw), and whether the first-launch note was shown</td></tr>
     <tr><td>Subscription status</td><td>Whether Google Play reports an active subscription on this device. The app uses it only to unlock features. It does not include a card number or other payment details.</td></tr>
   </table>
-  <p>Draw history stays on the device until you delete it or uninstall the app. The app shows only the last 7 days of it. Spread history, questions, option names, reported answers, and the question count also stay on the device until you delete them or uninstall the app.</p>
-  <p>The app does not ask for your name, email, or birth date. It only asks you to confirm that you are 19 or older. Writing a question is optional, and a question you write stays on the device.</p>
-  <p>Payments are handled by Google Play. The app receives only the subscription status from Google Play on the device, and it uses that status to unlock features. The developer does not receive card or payment details. There is no developer server. You cancel and manage the subscription in Google Play. AI chat is still an on-device preview. Answers are put together on the device from the card texts, not by an AI model, and no question or answer is sent anywhere. The conversation is erased when you close the screen. An answer you report is kept only on the device and is not sent to the developer.</p>
+  <p>Draw history stays on the device until you delete it or uninstall the app. The app shows only the last 7 days of it. Spread history, questions, option names, reports kept on the device, and the question count also stay on the device until you delete them or uninstall the app.</p>
+  <p>The app does not ask for your name, email, or birth date. It only asks you to confirm that you are 19 or older. A spread question is optional, and that one line stays on the device. A question in AI chat is different. If you send it, it leaves the device as section 5 describes. The conversation on screen is erased when you close the screen.</p>
+  <p>Payments are handled by Google Play. The app receives only the subscription status from Google Play on the device, and it uses that status to unlock features. The developer does not receive card or payment details. You cancel and manage the subscription in Google Play.</p>
   <p>If you add the widget, today's card and one line appear on the home screen. Anyone who can see the home screen can read them. That display is not a transfer to the developer.</p>
 
   <h3>3. Internet and permissions</h3>
-  <p>Version 0.3 does not send draws, questions, reports, or any personal data to the developer. There is no developer server. <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> come with Google Play Billing Library 9.1.0 and are used so purchases and subscription status can be checked with Google Play. The only thing the app receives from Google Play is the subscription status on the device, and it uses that status to unlock features. There is no ads, analytics, or crash-reporting SDK. The draw, five spreads, the short meaning, the dictionary, the history, the widget, and the AI chat preview are handled on the device.</p>
-  <p>Version 0.3 requests these permissions. RECEIVE_BOOT_COMPLETED (run at startup) is used only to correct the widget's date after the device restarts. The Play Billing permission (<code>com.android.vending.BILLING</code>), <code>INTERNET</code>, and <code>ACCESS_NETWORK_STATE</code> come with the Google Play Billing library and are used so purchases and subscription status can be checked with Google Play.</p>
-  <p>Version 0.3 does not request these permissions: advertising ID, location, contacts, camera, microphone, photos and videos, a foreground service, or a full-screen intent.</p>
+  <p>Version 0.4 requests these permissions. The app declares <code>INTERNET</code> and uses it for AI chat and subscription checks. RECEIVE_BOOT_COMPLETED (run at startup) is used only to correct the widget's date after the device restarts. The Play Billing permission (<code>com.android.vending.BILLING</code>) and <code>ACCESS_NETWORK_STATE</code> come with the Google Play Billing library and are used so purchases and subscription status can be checked with Google Play.</p>
+  <p>Version 0.4 does not request these permissions: advertising ID, location, contacts, camera, microphone, photos and videos, a foreground service, or a full-screen intent.</p>
+  <p>There is no ads, analytics, or crash-reporting SDK. The draw, five spreads, the short meaning, the dictionary, the history, and the widget are handled on the device.</p>
 
   <h3>4. Android Auto Backup</h3>
   <p>The app does not upload data itself. If Android Auto Backup is turned on for your device, Google may back up the app's data according to that device's settings. The Android system performs the backup. It does not use this app's internet permission. Google keeps and deletes that backup under your backup settings and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. A backup can include the one-line questions you wrote and the option names you entered for a choice between two.</p>
 
-  <h3>5. Deleting data</h3>
+  <h3>5. AI chat (optional)</h3>
+  <p>AI chat works only when you turn it on. It is off by default and asks for your agreement the first time. Everything else works if you do not agree or if you leave it off. It opens only after you confirm that you are 19 or older. The conversation on screen stays only in memory on this device and is erased when you close the screen. One request includes at most the latest 6 lines from before this question. The server does not store those lines and does not attach them to a later request.</p>
+  <p>If the app itself recognizes a question about self-harm or suicide, that question is not sent and the app shows crisis lines. If the server recognizes one, it does not call the model and returns the same kind of lines. That question is not stored unless you report it.</p>
+  <table>
+    <tr><th>Sent</th><td>The question, the drawn cards and their short texts, up to 6 recent lines, the locale (<code>ko</code> or <code>en</code>), the region code when present (two letters), the Google Play purchase token, and a SHA-256 key made from a prefix plus the Android ID</td></tr>
+    <tr><th>Not sent</th><td>Your name, email, birth date, the raw Android ID, or a card number. Personal information you type into the question is not removed. Do not write names, contacts, or health details</td></tr>
+    <tr><th>When and how</th><td>When you send a question, when the app asks the server for subscription status, and when you send a report. Over an encrypted connection (HTTPS)</td></tr>
+  </table>
+  <p>A status check happens only when AI chat is on. A status check sends only the purchase token and the device-key hash, not the question or the card texts. The region code is used only to order crisis lines and is not sent to OpenAI.</p>
+  <p><strong>Transfer abroad.</strong> The companies below process this information for AI chat. If you do not agree, nothing is sent and only AI chat is unavailable. Legal basis: Article 28-8 (1) 3 of the Personal Information Protection Act (entrustment and storage necessary to perform the contract). The app sends it over HTTPS each time you send a question, send a report, or ask for a status check.</p>
+  <table>
+    <tr><th>Recipient</th><th>Country</th><th>Items</th><th>Purpose</th><th>Kept</th></tr>
+    <tr><td>Cloudflare, Inc. (runs the developer's server). privacyquestions@cloudflare.com</td><td>United States. Requests are handled at a nearby Cloudflare data center</td><td>Everything sent above</td><td>Check purchases, count turns, pass the question on, keep reports</td><td>The original text of an ordinary conversation is not stored. A reported question and answer are kept as written for 90 days. Other server records are listed below</td></tr>
+    <tr><td>OpenAI OpCo, LLC. dsar@openai.com</td><td>United States</td><td>The question, the latest 6 lines, the drawn cards and their short texts, the spread, and the locale</td><td>Write the answer. The model is <code>gpt-6-luna</code>, called with <code>store: false</code></td><td>Official guide read on 8 November 2026: API data sent after 1 March 2023 is not used to train models unless you explicitly opt in. Abuse-monitoring logs are kept for up to 30 days by default, and longer when the law requires it or when it is reasonably necessary to protect the service or a third party. This policy does not confirm a Zero Data Retention approval for this app. <code>store: false</code> is not that approval. <a href="https://developers.openai.com/api/docs/guides/your-data">https://developers.openai.com/api/docs/guides/your-data</a></td></tr>
+  </table>
+  <p>The purchase token and the device-key hash are not sent to OpenAI. The server sends the purchase token to the Google Play Developer API to check the subscription. Payment data handled by Google follows the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>The server keeps these records.</p>
   <ul>
-    <li>"Delete all history" in the app deletes the draw history, spread history, questions, option names, reported answers, and question counters stored on the device. The conversation is already erased when you close the screen.</li>
-    <li>Uninstalling the app deletes the app's data on that device.</li>
+    <li>It does not store the question, the answer, the recent lines, the card texts, or the spread text of an ordinary conversation. Logs do not contain that text. They contain error codes only.</li>
+    <li>A reported question and answer are stored verbatim and deleted after 90 days. A request deletes them sooner. The reason and the locale are stored with them. That text may contain whatever you typed. A report is tied to the SHA-256 of the purchase token, or to the device-key hash.</li>
+    <li>The device key is not the raw Android ID. It is the SHA-256 of the prefix <code>tarot-free-v1:</code> joined to the Android ID, as 64 lowercase hex characters. The row that counts the free questions is deleted 1 year after its last use. A request deletes it sooner. Deleting it can open the free 3 questions again.</li>
+    <li>The subscription usage window (its start and its count) is deleted 1 year after its last use. A request deletes it sooner. Deleting it can move the start of the 24-hour window. Turning the clock back does not open a new window.</li>
+    <li>The server stores the SHA-256 of the purchase token and, when the request includes one, the SHA-256 of <code>linkedPurchaseToken</code>. It does not store the raw token. While the subscription continues, the hash keeps a plan change or a renewal on the same window. The hash is deleted 1 year after the subscription ends. A request deletes it sooner.</li>
+    <li>A purchase check is reused for 1 hour when it is valid and for 5 minutes when it is not. Reuse is not the moment the row is erased. Cleanup deletes a cache row whose check is older than 1 hour.</li>
+    <li>The count of model calls for a Seoul date is a number with no question text, and it is deleted after that date. A refund ticket that no longer matches an open window is deleted at cleanup.</li>
+  </ul>
+  <p>Cleanup runs at 00:10 Korea time. Rows past their retention period are deleted then. The free allowance is 3 questions ever for each device key. A valid subscription allows 20 questions every 24 hours from the first chat.</p>
+  <p>An AI writes the answers. They can be wrong, so use them only as a reference. Each answer has a report button that works without leaving the app. To delete a report, the device-key hash, or a purchase-token hash, use section 7.</p>
+
+  <h3>6. What the app does not do</h3>
+  <ul>
+    <li>It does not show ads. It does not build an advertising profile from what you send, and it does not sell that information.</li>
+    <li>It does not create an account or ask you to sign in.</li>
+    <li>It does not include an analytics SDK or a crash-reporting SDK.</li>
+    <li>It does not access the advertising ID, location, contacts, camera, microphone, or photos.</li>
+    <li>It does not receive or store payment card details.</li>
+    <li>It does not send or store the raw Android ID. The device-key hash is not used for ads.</li>
+    <li>Unless you turn on AI chat, it does not send a question, card text, a purchase token, or the device-key hash to the developer's server.</li>
+  </ul>
+
+  <h3>7. Deleting data</h3>
+  <ul>
+    <li>"Delete all history" in the app deletes the draw history, spread history, questions, option names, reports kept on the device, and question counters stored on the device. The conversation on screen is already erased when you close the screen. This delete does not remove records on the server.</li>
+    <li>From app 0.4.1, "Delete AI chat data" in Settings deletes the server rows for this device. That request deletes the free-question counter, the usage window, the purchase-token hash, the device-key hash, and reports.</li>
+    <li>Before that version, and after it, you can ask for deletion by email to the address in section 10. If you ask, those records are deleted. The deletion is not refused unless another statute requires the record to be kept. In the email, paste the device key from "Copy device key" in Settings so the request names this device.</li>
+    <li>Uninstalling the app deletes the app's data on that device. The device-key hash, the purchase-token hash, the usage window, and reports on the server are not deleted by uninstalling. The request above deletes them.</li>
     <li>If a copy exists in a Google backup, you manage that copy in your Google account and Android backup settings. The app cannot delete that backup.</li>
   </ul>
 
-  <h3>6. Children</h3>
-  <p>The app is not directed to children, and it does not knowingly collect personal information from children. It does not target children under Google Play's Families Policy. AI chat opens only after you confirm you are 19 or older.</p>
+  <h3>8. Children</h3>
+  <p>The app is not directed to children, and it does not knowingly collect personal information from children. It does not target children under Google Play's Families Policy. Only people who are 19 or older can use AI chat. The app does not receive personal information from anyone under 14.</p>
 
-  <h3>7. Changes</h3>
-  <p>This policy covers version 0.3. Payments are described here. Google Play handles payment, and the app receives only the subscription status on the device. A version that turns AI chat into a live service will update this policy before release, because questions would leave the device. If that version sends anything new off the device, the update will say so.</p>
+  <h3>9. Changes</h3>
+  <p>This policy covers version 0.4. The previous version is kept in the history of index.html in the <a href="https://github.com/chuckchucklab/tarot-privacy/commits/main/index.html">chuckchucklab/tarot-privacy</a> repository. Payments are described here. Google Play handles payment, and the app does not receive a card number.</p>
   <p>If this policy changes, the effective date is updated. A material change is also noted in the app's update text.</p>
 
-  <h3>8. Contact</h3>
-  <p>Developer: Solodep<br><a href="mailto:chuckchuck.lab+tarot@gmail.com">chuckchuck.lab+tarot@gmail.com</a></p>
+  <h3>10. Contact</h3>
+  <p>Personal information protection officer: Solodep<br><a href="mailto:chuckchuck.lab+tarot@gmail.com">chuckchuck.lab+tarot@gmail.com</a></p>
+
+  <h3>11. Your rights and how to use them</h3>
+  <p>You can ask to see your personal information, to correct it, to delete it, and to stop its processing. You can withdraw your agreement to AI chat.</p>
+  <ul>
+    <li>Ask for access, correction, deletion, or a stop to processing by email to the address in section 10. Paste the device key from "Copy device key" in Settings so the request names this device.</li>
+    <li>Deletion works as section 7 describes. From app 0.4.1, "Delete AI chat data" in Settings deletes the server rows for this device. "Delete all history" deletes the draw history on the device.</li>
+    <li>Turning AI chat off withdraws that agreement. After that, the app does not send a question, card text, a purchase token, or the device-key hash to the developer's server.</li>
+    <li>A deletion request is not refused unless another statute requires the record to be kept. If a request cannot be carried out, you are told why.</li>
+  </ul>
+
+  <h3>12. How data is destroyed</h3>
+  <p>There are no paper records. Electronic records are deleted so they cannot be restored.</p>
+  <ul>
+    <li>The question and answer of an ordinary conversation are not stored on the server. There is no stored text of that conversation to destroy.</li>
+    <li>A reported question and answer are deleted after 90 days. A request deletes them sooner.</li>
+    <li>The free-question counter and the usage window are deleted 1 year after their last use. A request deletes them sooner.</li>
+    <li>A purchase-token hash is deleted 1 year after the subscription ends. A request deletes it sooner.</li>
+    <li>Records on the device are deleted by "Delete all history" or by uninstalling the app.</li>
+    <li>Abuse-monitoring logs that OpenAI keeps follow the period in section 5. This app cannot delete those logs.</li>
+  </ul>
+
+  <h3>13. Safeguards</h3>
+  <ul>
+    <li>What the app sends to the server is encrypted with HTTPS.</li>
+    <li>The purchase token and the device identifier are stored only as hashes. The raw Android ID and card numbers are not stored.</li>
+    <li>The question and answer of an ordinary conversation are not stored. Logs keep error codes only, without that text.</li>
+    <li>There is no ads, analytics, or crash-reporting SDK.</li>
+    <li>The developer runs the server on Cloudflare. AI chat is off until you turn it on, and only then does the app send the items above.</li>
+  </ul>
+
+  <h3>14. Remedies</h3>
+  <p>You can report a privacy complaint, or ask for advice, at the bodies below. You can also write first to the personal information protection officer in section 10.</p>
+  <ul>
+    <li>Personal Information Infringement Report Center: 118 (no area code), <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li>
+    <li>Personal Information Dispute Mediation Committee: 1833-6972 (no area code), <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li>
+  </ul>
   </section>
 </body>
 </html>
